@@ -71,7 +71,7 @@ img {
     height: 60rem;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center center; 
 }
 
 .header__texto {
@@ -80,17 +80,9 @@ img {
     color: var(--blanco);
 }
 
-@media (min-widt: 768px){
-    .barra {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-}
 
 .logo {
     color: var(--blanco);
-    margin
 }
 
 .logo__nombre {
@@ -101,3 +93,69 @@ img {
     font-weight: 700;
 }
 
+.navegacion__enlace {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
+}
+
+.entrada {
+    border-bottom: 1px solid #e1e1e1 ;
+    margin-bottom: 2rem;
+}
+
+.entrada:last-of-type {
+    border: none;
+    margin-bottom: 0;
+}
+
+
+.boton {
+   display: block; 
+   font-family: var(--fueteHeading);
+   color: var(--blanco);
+   text-align: center;
+   padding: 1rem, 3rem;
+   font-size: 1.8rem;
+   text-transform: uppercase;
+   font-weight: 700;
+   margin-bottom: 2rem;
+}
+
+.boton--primario {
+    background-color: var(--negro);
+}
+
+
+@media (min-width: 768px){
+    .boton{
+        display: inline-block;
+    }
+}
+
+@media (min-width: 768px) {
+    .barra, 
+    .navegacion {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navegacion__enlace{
+        margin: 0.5rem;
+    }
+}
+
+@media (min-width: 768px){
+    .header__texto{
+        margin-top: 15rem;
+    }
+}
+
+@media (min-width: 768px){
+    .contenido--principal {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
